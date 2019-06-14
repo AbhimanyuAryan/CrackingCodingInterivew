@@ -5,13 +5,13 @@
 function magicIndex(totalStairs){
     // 1 step 2 step 3 step
     if(totalStairs == 0 || totalStairs == 1){
-      return 1
+      return 1;
     }else if(totalStairs == 2){
-      return 2
+      return 2;
     }
     else{
-      return magicIndex(totalStairs-1) + magicIndex(totalStairs-2) + magicIndex(totalStairs-3)
+      return magicIndex(totalStairs-1) + magicIndex(totalStairs-2) + magicIndex(totalStairs-3);
     }
   }
   
-  console.log(magicIndex(7))
+console.log(magicIndex(7));
